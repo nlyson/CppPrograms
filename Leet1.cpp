@@ -58,6 +58,7 @@ public:
                 return {i, m.at(target - nums[i])};
             }
 
+        // This shouldn't happen - we know there is a problem if it does
         return {0, 0};
         
     }
@@ -66,6 +67,7 @@ public:
 int main()
 {
     
+    // Test cases
     vector<int> test1{2, 7, 11, 15};
     
     vector<int> sol1 = Solution::twoSum(test1, 9);
