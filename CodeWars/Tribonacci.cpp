@@ -30,6 +30,7 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
 
 std::vector<int> tribonacci(std::vector<int> signature, int n)
 {
+    // Take care of any signature with less than 3 elements
     if(n == 0)
         return {};
     else if(n == 1)
@@ -41,6 +42,7 @@ std::vector<int> tribonacci(std::vector<int> signature, int n)
     
     int i = 3;
     
+    // Keep adding 3 previous elements to get new element and add it to our result vector
     while(i < n)
     {
         result.push_back(result[i-1] + result[i-2] + result[i-3]);
