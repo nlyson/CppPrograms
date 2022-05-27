@@ -25,5 +25,7 @@ std::string reverse_words(std::string str)
       // We found a space.  Put this word in our stringstream and move on to the next word
       reverseStr << reverseWord << " ";
    }
+   
+   // Only return number of characters in original string to avoid extra spaces at the end
    return reverseStr.str().substr(0, str.size());
 }
